@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)file:///C:/Users/a2z/MY%20WEBSITE/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Banti Raaz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      margin: 10px;
+      text-decoration: none;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: white;
+    }
+
+    section {
+      padding: 30px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    .card {
+      background: #f4f4f4;
+      padding: 20px;
+      margin: 10px 0;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    button {
+      padding: 10px 20px;
+      background: #0072ff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background: black;
+    }
+
+    input, textarea {
+      width: 80%;
+      padding: 10px;
+    }
+
+    footer {
+      text-align: center;
+      background: #111;
+      color: white;
+      padding: 10px;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav a {
+        display: block;
+        margin: 5px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Banti Raaz</h1>
+  <nav>
+    <a href="file:///C:/Users/a2z/MY%20WEBSITE/index.html#about">About</a>
+    <a href="file:///C:/Users/a2z/MY%20WEBSITE/index.html#skills">Skills</a>
+    <a href="file:///C:/Users/a2z/MY%20WEBSITE/index.html#projects">Projects</a>
+    <a href="file:///C:/Users/a2z/MY%20WEBSITE/index.html#login">Login</a>
+    <a href="file:///C:/Users/a2z/MY%20WEBSITE/index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Welcome Friends 🙏 Radhe Radhe</h2>
+  <p>I build games, websites &amp; learn AI 🚀</p>
+</section>
+
+<section id="about">
+  <h2>👤 About Me</h2>
+  <p>Hello! I am Banti Raaz. Welcome friends and Radhe Radhe 🙏  
+  I am learning Software Development Engineering with Applied AI (IIT Patna).</p>
+</section>
+
+<section id="skills">
+  <h2>💻 Skills</h2>
+  <ul>
+    <li>Python</li>
+    <li>Web Development</li>
+    <li>Game Development</li>
+    <li>Applied AI</li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2>🎮 Projects</h2>
+
+  <div class="card">
+    <h3>Cartoon Shooting Game 🎯</h3>
+    <p>A fun shooting game built using Python.</p>
+    <button onclick="alert(&#39;Game coming soon 🚀&#39;)">Play Game</button>
+  </div>
+
+  <div class="card">
+    <h3>Website Developer 💻</h3>
+    <p>I create responsive and modern websites.</p>
+  </div>
+
+  <div class="card">
+    <h3>Anime Story Creator 🎬</h3>
+    <p>Writing real-life stories and creating cartoon/anime videos.</p>
+  </div>
+
+</section>
+
+<section id="login">
+  <h2>🔐 Login</h2>
+
+  <input type="text" id="username" placeholder="Username"><br><br>
+  <input type="password" id="password" placeholder="Password"><br><br>
+
+  <button onclick="login()">Login</button>
+
+  <p id="message"></p>
+</section>
+
+<section id="contact">
+  <h2>📩 Contact</h2>
+
+  <form>
+    <input type="text" placeholder="Your Name"><br><br>
+    <input type="email" placeholder="Your Email"><br><br>
+    <textarea placeholder="Your Message"></textarea><br><br>
+
+    <button type="submit">Send</button>
+  </form>
+
+  <p>Phone: 9263268565</p>
+</section>
+
+<footer>
+  <p>© 2026 Banti Raaz</p>
+</footer>
+
+<script>
+function login() {
+  let user = document.getElementById("username").value;
+  let pass = document.getElementById("password").value;
+
+  if(user === "banti" && pass === "1234") {
+    document.getElementById("message").innerText = "Login Successful ✅";
+  } else {
+    document.getElementById("message").innerText = "Wrong Username or Password ❌";
+  }
+}
+</script>
+
+
+</body></html>
